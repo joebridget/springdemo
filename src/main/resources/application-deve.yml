@@ -1,0 +1,19 @@
+server:
+  context-path: /springbootDeve
+  jsp-servlet:
+    init-parameters:
+      development: true
+  port: 8989
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password:
+  mvc:
+    view:
+      prefix: /
+      suffix: .jsp
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.qp.entity
